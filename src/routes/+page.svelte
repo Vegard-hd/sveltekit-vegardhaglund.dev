@@ -10,7 +10,16 @@
 	import ThemeContoller from "./components/ThemeContoller.svelte";
 	let { data } = $props();
 	import { themeChange } from "theme-change";
+	function handleScroll() {
+		plausible("scroll");
+	}
 
+	onMount(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	});
 	// NOTE: the element that is using one of the theme attributes must be in the DOM on mount
 	onMount(() => {
 		// 👆 false parameter is required for svelte

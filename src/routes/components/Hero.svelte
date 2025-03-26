@@ -16,8 +16,10 @@
 				project's needs.
 			</p>
 			<button
-				class="btn btn-primary btn-lg mt-10"
-				on:click={() => document.querySelector("#projects").scrollIntoView({ behavior: "smooth" })}
+				class="btn btn-primary btn-lg plausible-event-name=callToAction mt-10"
+				on:click={() => {
+					document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
+				}}
 			>
 				Check out my projects
 			</button>
