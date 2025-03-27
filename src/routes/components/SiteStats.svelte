@@ -51,19 +51,19 @@
 	class="text-base-400 text-secondary mb-5 flex justify-self-center text-3xl font-semibold sm:mb-1"
 >
 	<div class="grid w-full max-w-4xl grid-cols-2 gap-0 text-center shadow-xl lg:grid-cols-4">
-		<div class="bg-base-300 stat shadow-sm">
+		<div class="bg-base-300 stat w-50 shadow-sm">
 			<div class="stat-title">Unique Visitors</div>
 			<div class="stat-value">{stats.allTime?.visitors}</div>
 		</div>
-		<div class="bg-base-300 stat shadow-sm">
+		<div class="bg-base-300 stat w-50 shadow-sm">
 			<div class="stat-title">Total Visits</div>
 			<div class="stat-value">{stats.allTime.visits}</div>
 		</div>
-		<div class="bg-base-300 stat shadow-sm">
+		<div class="bg-base-300 stat w-50 shadow-sm">
 			<div class="stat-title">Total Pageviews</div>
 			<div class="stat-value">{stats.allTime.pageviews}</div>
 		</div>
-		<div class="bg-base-300 stat shadow-sm">
+		<div class="bg-base-300 stat w-50 shadow-sm">
 			<div class="stat-title inline-flex justify-self-center">
 				Visit Duration <svg
 					class="ps-1 pb-1"
@@ -99,19 +99,19 @@
 	class="text-base-400 text-secondary mb-5 flex justify-self-center text-3xl font-semibold sm:mb-1"
 >
 	<div class="grid w-full max-w-4xl grid-cols-2 gap-0 text-center shadow-xl lg:grid-cols-4">
-		<div class="bg-base-300 text-secondary stat shadow-sm">
+		<div class="bg-base-300 text-secondary stat w-50 shadow-sm">
 			<div class="stat-title">Unique Visitors</div>
 			<div class="stat-value">{stats.lastWeek.visitors}</div>
 		</div>
-		<div class="bg-base-300 text-secondary stat shadow-sm">
+		<div class="bg-base-300 text-secondary stat w-50 shadow-sm">
 			<div class="stat-title">Total Visits</div>
 			<div class="stat-value">{stats.lastWeek.visits}</div>
 		</div>
-		<div class="bg-base-300 text-secondary stat shadow-sm">
+		<div class="bg-base-300 text-secondary stat w-50 shadow-sm">
 			<div class="stat-title">Total Pageviews</div>
 			<div class="stat-value">{stats.lastWeek.pageviews}</div>
 		</div>
-		<div class="bg-base-300 text-secondary stat shadow-sm">
+		<div class="bg-base-300 text-secondary stat w-50 shadow-sm">
 			<div class="stat-title inline-flex justify-self-center">
 				Visit Duration <svg
 					class="ps-1 pb-1"
