@@ -46,7 +46,7 @@
 	<meta property="og:url" content={siteUrl} />
 
 	<!-- Favicon -->
-	<!-- <link rel="icon" href="/favicon.ico" type="image/x-icon" /> -->
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
 	<!-- Preconnect and Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />

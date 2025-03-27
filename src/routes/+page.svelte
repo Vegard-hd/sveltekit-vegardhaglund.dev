@@ -35,9 +35,8 @@
 	});
 </script>
 
-<section class="static">
-	<ThemeContoller />
-</section>
+<ThemeContoller />
+
 <Hero />
 
 <h2
