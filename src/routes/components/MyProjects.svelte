@@ -1,4 +1,6 @@
-<div class="bg-neutral text-neutral-content mx-auto mt-20 max-w-md rounded-md p-5 shadow-md">
+<div
+	class="bg-neutral text-neutral-content mx-auto mt-20 max-w-md min-w-96 rounded-md p-5 shadow-md"
+>
 	<!-- Centered Avatar Image -->
 	<div class="flex justify-center">
 		<div class="avatar">

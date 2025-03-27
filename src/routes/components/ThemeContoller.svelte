@@ -14,7 +14,7 @@
 	}
 </script>
 
-<label id="darkModeToggle" class="swap swap-rotate text-base-content absolute right-0 isolate p-6">
+<label id="darkModeToggle" class="swap swap-rotate text-base-content absolute top-0 right-0 p-6">
 	<!-- this hidden checkbox controls the state -->
 	<input
 		onclick={() => {

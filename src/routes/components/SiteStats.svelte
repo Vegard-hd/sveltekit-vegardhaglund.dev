@@ -18,7 +18,9 @@
 	}
 </script>
 
-<h2 class="text-primary mt-25 flex justify-self-center text-4xl font-bold sm:mb-3 md:mb-8">
+<h2
+	class="text-primary mt-25 flex min-w-2/3 justify-self-center text-4xl font-bold sm:mb-3 md:mb-8"
+>
 	Site analytics
 	<svg
 		class="ps-2 pb-2"
