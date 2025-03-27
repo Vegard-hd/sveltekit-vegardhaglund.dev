@@ -61,10 +61,11 @@
 	/>
 
 	<!-- External Script (e.g., Analytics) -->
+
 	<script
 		defer
 		data-domain="vegardhaglund.dev"
-		src="https://required.vegardhaglund.dev/js/script.outbound-links.pageview-props.tagged-events.js"
+		src="https://required.vegardhaglund.website/js/script.outbound-links.pageview-props.tagged-events.js"
 	></script>
 </svelte:head>
 {@render children()}

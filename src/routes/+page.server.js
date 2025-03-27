@@ -1,6 +1,6 @@
 /** @type {import('./$types').PageLoad} */
-import { LRUCache } from 'lru-cache';
-import dotenv from 'dotenv';
+import { LRUCache } from "lru-cache";
+import dotenv from "dotenv";
 dotenv.config();
 const options = {
 	max: 1,
@@ -18,19 +18,19 @@ const options = {
 };
 
 const cache = new LRUCache(options);
-import axios from 'axios';
+import axios from "axios";
 const requestData = {
-	site_id: 'vegardhaglund.dev',
-	metrics: ['visitors', 'visits', 'pageviews', 'visit_duration'],
-	date_range: 'all'
+	site_id: "vegardhaglund.dev",
+	metrics: ["visitors", "visits", "pageviews", "visit_duration"],
+	date_range: "all"
 	// filters: [["is_not", "visit:country_name", [""]]],
 	// dimensions: ["visit:country_name", "visit:city_name"],
 };
 
 const requestData7days = {
-	site_id: 'vegardhaglund.dev',
-	metrics: ['visitors', 'visits', 'pageviews', 'visit_duration'],
-	date_range: '7d'
+	site_id: "vegardhaglund.dev",
+	metrics: ["visitors", "visits", "pageviews", "visit_duration"],
+	date_range: "7d"
 	// filters: [["is_not", "visit:country_name", [""]]],
 	// dimensions: ["visit:country_name", "visit:city_name"],
 };
@@ -40,12 +40,12 @@ const key = process.env.PLAUSIBLE_KEY;
 async function getStats() {
 	const getApiData = async (queryOptions) => {
 		const { data } = await axios.post(
-			'https://required.vegardhaglund.dev/api/v2/query',
+			"https://required.vegardhaglund.website/api/v2/query",
 			queryOptions,
 			{
 				headers: {
-					setContentType: 'application/json',
-					Authorization: 'Bearer ' + key
+					setContentType: "application/json",
+					Authorization: "Bearer " + key
 				}
 			}
 		);
@@ -88,10 +88,10 @@ async function getStats() {
 }
 
 export const load = async () => {
-	let apiData = cache.get('latest');
+	let apiData = cache.get("latest");
 	if (!apiData) {
 		apiData = await getStats();
-		cache.set('latest', apiData);
+		cache.set("latest", apiData);
 	}
 	return apiData;
 };
