@@ -40,12 +40,6 @@
 
 <Hero />
 
-<h2
-	id="projects"
-	class="text-primary mt-25 mb-5 flex justify-self-center text-4xl font-bold sm:mb-1"
->
-	My Projects:
-</h2>
 <MyProjects />
 
 <SiteStats stats={data} />
